@@ -1,0 +1,17 @@
+{
+	"name": "ts-backend-template",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"prepare": "lefthook install",
+		"format": "biome format --write src",
+		"lint": "biome lint --apply src"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.4",
+		"@types/bun": "^1.0.12",
+		"lefthook": "^1.6.8",
+		"typescript": "^5.4.4"
+	},
+	"trustedDependencies": ["@biomejs/biome", "lefthook"]
+}
